@@ -5,6 +5,10 @@ on:
     branches: ['main', 'develop', 'feature/*']
     tags:
       - 'v*'   # Push events to matching v*, i.e. v1.0, v20.15.10
+    paths-ignore:
+      - "docs/"
+      - "LICENSE"
+      - ".gitignore"
 
 env:
   REGISTRY: ghcr.io
