@@ -21,9 +21,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Change directory
-        run: cd ./app
-
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/golang@master
         env:
