@@ -4,14 +4,14 @@ FROM golang:1.17-alpine
 
 WORKDIR /app
 
+COPY *.go ./
 COPY go.mod ./
 COPY go.sum ./
+
 RUN go mod download
 
-COPY *.go ./
-
-RUN go build -o /docker-gs-ping
+RUN go build -o /sample-go-repo
 
 EXPOSE 8080
 
-CMD [ "/docker-gs-ping" ]
+CMD [ "/sample-go-repo" ]
