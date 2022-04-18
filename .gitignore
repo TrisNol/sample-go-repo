@@ -1,3 +1,6 @@
+# Snyk scan results
+.dccache
+
 # Binaries for programs and plugins
 *.exe
 *.exe~
